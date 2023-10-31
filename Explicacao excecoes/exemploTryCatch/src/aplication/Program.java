@@ -15,10 +15,21 @@ public class Program {
     
     
     public static void main(String[] args){
+        
+        // ele vai chamar metodo 
+        
+        method2();
+        // depois escreve mensagem q terminou
+        System.out.println("End of program");
+
+    }
+    
+    
+    // metodo 
+    public static void method2(){
+ 
+        System.out.println("***** Methodo2 Start *******");
         Scanner sc = new Scanner(System.in);
-        
-        // vetor q vai receber varios com esse split espaço em branco
-        
         try{
             String[] vect = sc.nextLine().split(" ");
             int position = sc.nextInt();
@@ -32,15 +43,11 @@ public class Program {
         catch(InputMismatchException e) {
             System.out.println("Input error");   
         }
-        
-        System.out.println("End of program");
-        
-        
-        
-        
-        
-        
         sc.close();
+        System.out.println("***** Methodo2 End *******")
+        
+        
     }
+    
     
 }
